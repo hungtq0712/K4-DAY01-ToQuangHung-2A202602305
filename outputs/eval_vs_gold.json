@@ -1,0 +1,56 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "/content/Day3-Lab/annotations/clip_01/gt.txt",
+  "gt_file": "/content/Day3-Lab/gold/clip_01/gt.txt",
+  "pred_label": "nhãn của bạn",
+  "gt_label": "gold clip_01",
+  "metrics": {
+    "HOTA": 0.8856,
+    "DetA": 0.877,
+    "AssA": 0.8951,
+    "LocA": 0.8973,
+    "IDF1": 0.9974,
+    "IDTP": 573,
+    "IDFP": 3,
+    "IDFN": 0,
+    "MOTA": 0.9948,
+    "MOTP": 0.8878,
+    "IDSW": 0,
+    "FP": 3,
+    "FN": 0,
+    "GT_boxes": 573,
+    "PRED_boxes": 576
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 0.9973890339425587,
+        "required": 0.8,
+        "passed": true
+      },
+      "MOTA": {
+        "value": 0.9947643979057592,
+        "required": 0.75,
+        "passed": true
+      },
+      "MOTP": {
+        "value": 0.8878457740530914,
+        "required": 0.7,
+        "passed": true
+      }
+    },
+    "passed": true
+  },
+  "diagnostics": {
+    "missed_gt_tracks": [],
+    "fragmented_gt_tracks": [],
+    "partially_covered_gt_tracks": [],
+    "ghost_pred_tracks": [],
+    "id_switches": [],
+    "loose_boxes": [],
+    "n_gt_tracks": 8,
+    "n_pred_tracks": 8
+  }
+}
